@@ -7,12 +7,21 @@ package Others;
  * static은 클래의 소속, static을 빼면 인스턴스의 소속으로 바뀐다.
  * 
  * */
+
+/*
+ * this는 클래스가 인스턴스화 되었을 때 그 인스턴스의 클래스 변수 값이다.
+ * */
 class Print {
 	
 	public String delimiter = "";
 	
+	public Print(String delimiter) {
+		this.delimiter = delimiter;
+		
+	}
+	
 	public void A() {
-		System.out.println(delimiter);
+		System.out.println(this.delimiter);
 		System.out.println("A");
 		System.out.println("A");
 	}
